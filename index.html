@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yazarlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+            * {
+              margin: 0px;
+            }
+
+            .yazar {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              margin-bottom: 30px;
+              color: #f5e6cc;
+              margin-right: 10px;
+              margin: 50px;
+            }
+           
+            .Yazarfoto {
+              width: 250px;
+              border-radius: 200px;
+            }
+
+            header {
+              text-align: center;
+              margin: 20px;
+            }
+
+            .edebiyat {     
+              color: #A2D2FF;
+              border-left: 5px;
+              font-size: 40px;
+              border-left: 5px solid #A2D2FF;
+            }
+            nav {
+              text-align: center;
+            }
+
+            body {
+            background-color: #101010;
+            font-family: "Poppins", sans-serif;
+            }
+           
+
+            p {
+              color: white;
+              font-weight: 400;
+              line-height: 1.6;
+              max-width: 500px;
+              bottom: 50px;
+            }
+
+            .head {
+              color: yellow;
+            }
+
+            a {
+              text-decoration: none;
+              color: #f5e6cc;
+              cursor: pointer;
+              transition: color 0.3s;
+            }
+            a:hover {
+              color: red;
+            }
+
+            .yazar p:active,
+            .yazar a:active
+             {
+              color: red;
+            }
+            .Ana {
+              color: #fff;
+              background-color: 	#101010;
+            }
+
+            .Ana:hover {
+              color: red;
+            }
+
+            i:hover {
+              color: red;
+              cursor: pointer;
+              transition: color 0.3s;
+            }
+
+            .yazarlar {
+              margin-left: 500px;
+            }
+
+            .felsefeyazarı {
+              color: #D4AF37;
+              font-size: 40px;
+              border-left: 5px solid #D4AF37
+            }
+            .psikoloji {
+              color: #BDB2FF;
+              font-size: 40px;
+              border-left: 5px solid #BDB2FF
+            }
+
+            .manga {
+              color: #FFADAD;
+              font-size: 40px;
+              border-left: 5px solid #FFADAD
+            }
+
+            .şiir {
+              color: #98FB98;
+              font-size: 40px;
+              border-left: 5px solid #98FB98
+            }
+        
+            .eserler {
+              width: 100px;
+            }
+            @media screen and (max-width: 768px) {
+    /* 1. Ana taşıyıcıdaki büyük boşluğu sıfırla */
+    .yazarlar {
+        margin-left: 0 !important; /* Masaüstündeki 450px'i iptal eder */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* İçeriği yatayda ortalar */
+        width: 100%;
+    }
+
+    /* 2. Her bir yazar kutusunu düzenle */
+    .yazar {
+        margin: 20px 10px !important; /* Dış boşlukları küçült */
+        flex-direction: column; /* Resim ve yazıyı alt alta getir */
+        text-align: center; /* Metinleri ortala */
+    }
+
+    /* 3. Paragraf genişliğini mobil ekrana uyarla */
+    p {
+        max-width: 90%; /* Yazının ekrandan taşmasını önler */
+        margin: 0 auto; /* Paragrafı ortalar */
+    }
+
+    /* 4. Resimlerin taşmasını önle */
+    .Yazarfoto {
+        width: 80%; /* Mobilde resim çok büyükse ekranı kaplasın */
+        max-width: 250px;
+    }
+}
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i style="color: #d4af37"
+          >Bu sitede her şey benim görüş açıma göre oluşturulmuştur!</i
+        >
+      </h1>
+      <h1 class="head">İşte En iyi Yazarlar 📜</h1>
+    </header>
+    <section class="yazarlar">
+      <section class="yazar">
+        <div>
+          <h1 class="edebiyat">Dünya Edebiyatı Yazarları</h1>
+        </div>
+      </section>
+    <section class="yazar">
+      <div>
+        <img
+          class="Yazarfoto"
+          src="https://iasbh.tmgrup.com.tr/bd8b51/0/0/0/0/0/0?u=https://isbh.tmgrup.com.tr/sb/album/2025/10/01/dostoyevski-sozleri-fyodor-dostoyevskinin-unutulmaz-sozleri-ve-kitaplarindan-alintilar-1759319620603.jpeg&mw=600"
+          alt=""
+        />
+        <h1>
+          <a href="#">Dostoyevski</a>
+        </h1>
+        <p>
+          Kendisi beni kitap okumaya sevdiren bir insan desem yalan olmaz
+          Dostoyevski okuduğunuzda kesinlikle ilk diyeceğiniz şey bu adam bu
+          kadar bakış açışını sadece bir hayatta mı sahip olmuş Raskolnikov
+          karakterinden bahsetmiyorum bile tek başına bir şaheser Suç ve Ceza
+          okuduktan sonra uzunca bir süre eminim ne okursanız okuyun Suç ve
+          Cezanın yerini tutmucaktır Bune ek olarak insancıklar kitabının sonunda
+          ters köşe yapıp bizi üzüntüye boğması ne kadar realist bir yazar
+          olduğunu gösteriyo her zaman ütopik eserler kaleme almamıştır.
+        </p>
+        <h2 style="color: yellow;">En sevdiğim Eserleri</h2>
+        <img
+          src="https://i.dr.com.tr/cache/600x600-0/originals/0001788076001-1.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        <img
+          src="https://img.kitapyurdu.com/v1/getImage/fn:11429628/wi:800/wh:2b969cd05"
+          alt
+          width="100"
+          alt=""
+        />
+        🌟9/10
+        <h2>Kitapları Su gibi Akar</h2>
+        </div>
+        </section>
+        <section class="yazar">
+          <div>
+        <img
+          class="Yazarfoto"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV9HnftLamn9JYevSf2CHWuHEGUXWpaaOEGg&s"
+          alt=""
+        />        
+        <h1>
+          <a href="#">Franz Kafka</a>
+        </h1>
+        <p>
+          Franz Kafka okurken duygulanabilirsiniz kendisi çünkü çoğunlukla
+          yaşadıklarını anlatır mesela babaya mektup kitabı aslında bir kitap
+          değil gerçekten mektupdur burdan anlayabiliyoruz ki Kafkanın Dönüşüm
+          kitabında anlattığı Gregor Samsa karakteri aslında Kafkanın ta
+          kendisidir Kafka kendisinde her zaman aşağılar hatta bir yazısında der
+          ki lisede okurken hep sınıfta kalıcağımı düşünürdüm Kafka gibi
+          bilinçli bir adamın bile böyle bir korku yaşaması aslında onun
+          kendisinin farkında olmadığını bize gösteriyo her zaman kendisini
+          aşağıda görüyo ezilmiş aynı bir böcek gibi o yüzden Gregor Samsa
+          karakteri aslında kafkanın az öncede söylediğim gibi ta kendisidir.
+        </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img
+          src="https://img.kitapyurdu.com/v1/getImage/fn:5072703/wh:true/wi:800"
+          alt
+          width="100"
+          alt=""
+        />
+        <img
+          src="https://www.canyayinlari.com/productimages/120579/original/9789755109251_516.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        🌟9/10
+        <h2>Realist Yaklaşımı Mükemmel</h2>
+    </section>
+    <section class="yazar">
+      <div>
+        <img
+          class="Yazarfoto"
+          src="https://www.royalmint.com/globalassets/_ecommerce/commemorative/launches/2025-launches/george-orwell/article/t9_articles_content_1200x600_intro_split-feature_orwell.jpg"
+          alt=""
+        />
+
+        <h1>
+          <a href="#">George Orwell</a>
+        </h1>
+        <p>
+          İlk olarak George Orwellda hayvan çiftliği eserini okumuştum orda
+          hayvanların insanların otoritesine karşı çıkıp kendilerine özel bir
+          otorite oluşuturup sonda yine aynı insanlar gibi olduklarını okuyunca
+          aslında bir düzende olduğumuzu ve gücün kimde olursa olsun mutlak
+          sondan asla vazgeçmiceğini anladım. 1984 eseride gerçekten etkileyici
+          bir eser aslında belkide gerçekten geleceği konu alan bir eser
+          olabilir nedeni insanlar bilinçlendikçe daha çok sorgulamaya başlar
+          buda otorite sahibi olan insanlar için kötüdür o yüzden her zaman
+          onların yönettiği insanların sorgulama yeteneklerini elinden almak
+          isterler.
+        </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img
+          src="https://i.dr.com.tr/cache/600x600-0/originals/0000000064038-1.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        <img
+          src="https://i.dr.com.tr/cache/600x600-0/originals/0000000105409-1.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        🌟7/10
+        <h2>Her Yaşa Hitap edebilir</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://corummustafakemal.meb.k12.tr/meb_iys_dosyalar/19/01/975095/resimler/2022_10/k_09141607_Mustafa-Kemal-Ataturk-wikipedia-1930s.jpg" alt="">
+        <a href="#"><h1>Mustafa Kemal Atatürk</h1></a>
+        <p>Atama yer vermesem şimdi olmazdı bizim gönlümüzün en iyi yazarı ki Cidden eserleri de boş eserler değil mesela geometri kitabı ne kadar bilimsel teknikleri bildiğini gösteriyo Nutuk gelecek nesile bir öğüt resmen.(Huzur İçinde Yat Atam.)</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://img.iskultur.com.tr/webp/2010/02/Nutuk.png" ald width="100" alt=""
+        >
+        <img src="https://img.kitapyurdu.com/v1/getImage/fn:11473194/wh:true/wi:800" alt width="100" alt="">
+        🫡10/10
+      </div>
+    </section>
+     <section class="yazar">
+          <div><h1 class="felsefeyazarı">Felsefe Yazarları</h1></div>
+        </section>
+    <section class="yazar">
+      <div>
+        <img
+          class="Yazarfoto"
+          src="https://m.media-amazon.com/images/M/MV5BMmU3NDE4MzMtODk5My00MWE3LWEyMzYtZTNiZmI1M2Q5ZDU3XkEyXkFqcGc@._V1_.jpg"
+          alt=""
+        />
+        <a href="#"><h1>Albert Camus</h1></a>
+        <p>
+          Albert Camus benim Roman ve Felsefe kitaplarına bağlayan kişiydi
+          yabancı kitabındaki o karakterin olduğu boşluk hissi nihilist
+          yaşantısı gerçekten de çok fazla iyi işlenmiş kitabın başındaki söz
+          beni çok etkilemişti: "Annem ölmüş bugün veya dün bilmiyorum." bu
+          aslında karakterin ne kadar da hayatı boşverdiğini umursamadığını yani
+          aslında tamamen nihilist bir bakış açısına sahip olarak yaşadığını
+          bize net olarak gösteriyo.
+        </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img
+          src="https://img.kitapyurdu.com/v1/getImage/fn:11262270/wh:true/miw:200/mih:200"
+          alt
+          width="100"
+          alt=""
+        />
+        <img
+          src="https://m.media-amazon.com/images/I/91HXP+aU7UL.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        🌟9/10
+        <h2>Zor Ama Sürükleyici</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img
+          class="Yazarfoto"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf6wl5PUsgDJa25zugk3mq1N0Rv-hB8ogF-Q&s"
+          alt=""
+        />
+        <a href="#"><h1>Friedrich Nietzsche</h1></a>
+        <p>
+          Friedrich Nietzsche bazı konularda çok fazla haksızdır bunları üstüne
+          konuşmadan önce anlatmak istedim yani seviyorum diye her fikrine
+          katılmak zorunda değilim kadınlar hakkındaki görüşlerine katiyen
+          katılmıyorum ama felsefi görüşleri gerçekten takdire şayan mesela
+          Böyle Buyurdu Zerdüşt kitabı çok öğretici bir eserdir kitapda
+          Nietzsche bir bilgedir önüne bir sürü insanlar çıkar hepsinin felsefi
+          görüşleri bambaşkadır Nietzsche bu kitapda toplumdan yozlaşmış ve
+          başına mağarada yaşayan bilge bir adamı konu alır bu adam karşısına
+          çıkan insanlara nasihatlar verir ve evine doğru ilerler sonu da
+          gerçekten çarpıtıcı.
+        </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img
+          src="https://www.canyayinlari.com/productimages/120758/big/9789750755811_front_cover1.jpg"
+          alt
+          width="100"
+          alt=""
+        />
+        <img
+          src="https://img.kitapyurdu.com/v1/getImage/fn:7306530/wh:true/wi:800"
+          alt
+          width="100"
+          alt=""
+        />
+        🌟8/10
+        <h2>Felsefi Terimleri çok kullanmaz ama Yinede Zor</h2>
+      </div> 
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://m.media-amazon.com/images/M/MV5BMTU0NzU5OGItNmM2Zi00ZmU4LThiZTMtYTQ2M2QyMmMwZmJjXkEyXkFqcGc@._V1_.jpg" alt="">
+         <h1><a href="#">Bertrand Russell</a></h1>
+         <p>Bertrand Russell kendisine ait felsefe kitapları ile de tanınan bir insan olsa bile ben daha çok felsefe tarihi ile tanıyorum dokunduğu noktalar anlatım akışı kendi fikirlerini dahil etmemesi ilkçağ ortaçağ modern felsefe olsun hepsini kaliteli bir şekilde bize sunması onun ne kadar iyi bir yazar olduğunu bize gösteriyo.</p>
+         <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+         <img src="https://img.kitapyurdu.com/v1/getImage/fn:11584724/wh:true/wi:800" ald width="100" alt="">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_3nWdL66kh28ep567W9qmto2bjg_ARCpEw&s" alt width="100" alt="">
+         🌟7/10 <h2>Anlatım Biçimi Çok Net</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://www.teeshopusa.com/cdn/shop/articles/who-is-arthur-schopenhauer-1827697.jpg?v=1756553104&width=1600" alt="">
+        <h1><a href="#">Arthur Schopenhauer</a></h1>
+        <p>Arthur Schopenhauer kendisi felsefe alanında gerçekten bilgi sahibi biridir Friendrich Nietzschenin zaten Schopenhauer'u öğretmeni olarak görmesi bunun bir kanıtıdır kendisi geçinilmez bir adam olduğunu söyler bilmiyorum belki de öyledir eserleri gerçekten zor ve ağırdır okurken çok zorlanabilirsiniz Mutlu Olma Sanatı Eseri mükemmel bir eserdir ama kesinlikle size mutluluğun şifrelerini verebilir.  </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://img.kitapyurdu.com/v1/getImage/fn:11481518/wi:800/wh:ac1b2f46d" alt width="100" alt="">
+        <img src="https://img.kitapyurdu.com/v1/getImage/fn:5072709/wh:true/wi:800" alt width="100" alt="">
+         🌟7/10 <h2>Dili Çok Ağır</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbiNzOw6GMEsscbcHiXe5q0M-gNZiceIKxA&s" alt="">
+        <h1><a href="#">Platon</a></h1>
+        <p>Platon öğretmeni Sokrates kadar bilgili birisidir çoğu kitabında sokratesin sözlerine yer verir Devlet kitabı mesela direk sokratesin yaşadığı bir hikayedir platonun demokrasi karşı olan tutumu beni çok düşündürmüştü platon buna örnek olarak şunu söyler bir gemiye kaptan seçerken o kaptanın o işi bilip bilmediğini nasıl bilebiliriz bize yalan söyleme olasılığının olduğunu söyler Buna ek olarak Platon Alegorisi de benim çok hoşuma gider.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI7Ch50HhjG2WnVlpW5TyLSQLM_JLUPWxNLw&s" alt width="100" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4q8Oe9G02wb9s7hjRXOIyB99dmQDS32edPQ&s" alt width="100" alt="">
+        🌟9/10 <h2>Zor Ama Anlayana Güzel</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://mitolojikhikayeler.com/wp-content/uploads/2023/10/Mitolojik-Hikayeler12-840x473.png" alt="">
+        <h1><a href="#">Homeros</a></h1>
+        <p>Homeros Mitoloji konusunda benim için çok önemli bir insan yaşadığı zamanda insanlar ona peygamber gözüyle bakmış olması bile yazmış olduğu destanlarının kalitesini bize gösteriyo gerçekten ele aldığı eserler pahabiçilemez.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://img.kitapyurdu.com/v1/getImage/fn:11296725/wh:true/wi:800" alt width="100" alt="">
+        <img src="https://img.kitapyurdu.com/v1/getImage/fn:260489/wh:true/wi:800" alt width="100" alt="">
+         🌟9/10 <h2>Destanları Uzun Ama Sürükleyici</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>       
+        <img class="Yazarfoto" src="https://seyler.ekstat.com/img/max/800/U/USanEefSEz5owFu8-636663126864223215.jpg"  alt="">
+        <h1><a href="#">Hesiodos</a></h1>
+        <p>Homeros ile Hesiodos aşırı benzer destanlar yazmışlardır zaten ikiside yunan mitolojisinin tarihini farklı biçimlerde anlatan yazarlardır bilginin güçleri olarak bahsedilir ikisindende. </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://www.iskultur.com.tr/dosyalar/2016/07/theogonia-3.jpg" alt width="100" alt="">
+          🌟8/10 <h2>Homeros ile Aşırı benzer</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://bilimvegelecek.com.tr/wp-content/uploads/2019/05/1-9.jpg" alt="">
+        <h1><a href="#">Sophokles</a></h1>
+        <p>Sophokles okurken sizi hayrete düşürecek özgür irade fikirlerine sahip bir filozof kendisinin en ünlu eseri Kral Oidipus kısaca bahsedicek olursak Kral oidipus lanetlenmiş bir adamdır ve ne yaparsa yapsın lanetinden kaçamaz ne kadar özgür olduğunu düşünsede o daha bebekken kaderi çizilmiştir.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://img.iskultur.com.tr/webp/2012/01/kral-oidipus-3.jpg" alt width="100" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSyuVP3W-7QbDtaPCHBDpOmh_Tk5dT2OLUvg&s"alt width="97" alt="">
+         🌟9/10 <h2>Anlaşılır ve SÜrükleyici</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <h1 class="psikoloji">Psikoloji Yazarları</h1>
+      </div>
+    </section>
+    <section class="yazar"> 
+      <div>
+        <img class="Yazarfoto" src="https://www.toolshero.com/wp-content/uploads/2021/12/sigmund-freud-toolshero.jpg" alt="">
+        <h1><a href="#">Sigmund Freud</a></h1>
+        <p>Sigmun Freud psikoloji konusunda çok önemli bir isim ki zaten psikoloji hatta psikanaliz dediğiniz an akıllara direk gelen isimdir Sigmund Freud kendisi psikinaliz dalını ortaya koyan ve bunun üzerine çalışmalar yapan birisidir yazdığı kitaplarda psikanalize rüyalara değinmiştir freud okuduktan sonra rüyalarınız hakkında bazı yorumlarda bulunabilirsiniz. </p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://cdn1.dokuzsoft.com/u/pelikankitabevi/img/c/0/0/0000966-psikanaliz-uzerine-yeni-arastirmalar-ve-bulgular-jpeg-1561816563.jpg" alt width="100" alt="">
+        <img src="https://i.dr.com.tr/cache/600x600-0/originals/0000000576863-1.jpg" alt width="100"  alt="">
+       🌟8/10 <h2>Dili Biraz Zordur</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div><h1 class="şiir">Şiir Yazarları</h1></div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlbC0k9qes3cL70ulsolhiEjhLLgTpDg-4Q&s" alt="">
+        <h1>Nazım Hikmet</h1>
+        <p>Şiir okumaya başladığım kişidir kendisi bakış açıları olsun şiirlerindeki derinlikler olsun yazdığı aşk şiirleri olsun benim için çok önemli biridir.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://i.dr.com.tr/cache/600x600-0/originals/0000000113186-1.jpg" alt width="100" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9qsy0ItNuW91nzudDJKSbllJ5j8Yk_xJ8yA&s" alt width="100" alt="">
+          🌟8/10 <h2>Kısa Ve Net</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div><h1 class="manga">Manga Yazarları</h1></div>
+    </section>
+    <section class="yazar"> 
+      <div>
+        <img class="Yazarfoto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeUSAyB2zkiL3gYsm_QLPIAKM5Ting-H4mQ&s" alt="">
+        <h1>Akira Toriyama</h1>
+        <p>Manga okumaya ilk başladığım kişidir Akira Toriyama diğer mangalara sağladığı bakış açılarını söylememe gerek yok herhalde çoğu kişi mangaların atası olarak kabul eder ki hikayesindeki sürükleyicilik olsun bitmek bilmeyen aksiyonu olsun tek başına bir şaheser.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpr2pX6ewU0n7_1Ujam752pJqZN_RQPBumA&s" alt width="100" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF79ij7s8DNMinIt03ui_Ne3jLPdhleheEhw&s" alt width="100" alt="">
+         🌟8/10 <h2>Dili Baya Kolaydır</h2>
+      </div>
+    </section>
+    <section class="yazar">
+      <div>
+        <img class="Yazarfoto" src="https://cdn.kayiprihtim.com/wp-content/uploads/2024/08/Naruto-Yaraticisi-Masashi-Kishimoto-662x372.jpg" alt="">
+        <h1>Masashi Kishimoto</h1>
+        <p>Kendisi Narutonun yazarıdır yazdığı eserdeki naruto karakterinin içe dönüklüğünü çok sevmiştim psikolojik olarak ve felsefik olarak yorumlarsak naruto karakteri aslında düz mantıkla kötü olması beklenilen bir karakter ama burda yazar bizi şaşırtıp başkarakter yapması beni etkilemişti diğer karakterlerinde hikayelerinin dolu dolu olması ve yaşanılan onca şeyin arkasının boş olmaması tek kelimeyle mükemmel.</p>
+        <h2 style="color: yellow;">En Sevdiğim Eserleri</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM9evmtq2Zb1XlATk8dn1bWuk1J-Ok8x9Geg&s" alt width="100" alt="">
+        <img src="https://cdn.kobo.com/book-images/a2fe4045-0e49-4153-9991-c9e6d3487251/1200/1200/False/naruto-vol-68.jpg" alt width="100" alt="">
+        🌟9/10 <h2>Aksiyon Dolu Sahneler</h2>
+      </div>
+    </section>
+    </section>
+    <footer style="text-align: center; padding: 50px; color: #f5e6cc; border-top: 1px solid #333;">
+    <p style="margin: 0 auto;">Bu portfolyo İbrahim Yanar tarafından hazırlanmıştır.</p>
+    <p style="margin: 10px auto;">📧 [ibrahimyanar630@gmail.com] </p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">© 2025 - Geleceğin Web Tasarımcısı ve Kitap Dostu</p>
+</footer>
+  </body>
+</html>
